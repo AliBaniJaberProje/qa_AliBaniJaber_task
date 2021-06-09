@@ -11,9 +11,6 @@ class HotelStructOutput(HotelStructInput):
         self.add_validity()
 
     def add_validity(self):
-
-
-
         if not str(self.hotel_url).startswith("https://www.booking.com") or \
                 (self.current_hotel_name is None and self.hotel_review is None):
             self.valid_record = "Invalid URL"
@@ -25,13 +22,6 @@ class HotelStructOutput(HotelStructInput):
             self.valid_record = "Valid"
 
     def __repr__(self):
-
-        print(" , ".join([self.hotel_name,
-                         self.hotel_url,
-                         self.valid_record,
-                         self.current_hotel_name,
-                         self.hotel_review]))
-
         return self.hotel_name+","+\
                          self.hotel_url+","+\
                          self.valid_record+","+\

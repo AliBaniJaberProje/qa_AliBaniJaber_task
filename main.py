@@ -1,9 +1,7 @@
-from hotel_test_runner import HotelTestRunner
+from hotel_runner import HotelRunner
 
 if __name__ == '__main__':
-    runner = HotelTestRunner("Booking_Url_validation.csv")
-    try:
-        runner.start()
-    except Exception as ex:
-        print("gggg")
+    runner = HotelRunner("Booking_Url_validation.csv")
+    runner.start()
+
 

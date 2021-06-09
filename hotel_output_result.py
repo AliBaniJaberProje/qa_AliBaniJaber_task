@@ -1,7 +1,7 @@
 import time
 
 
-class HotelResultTest:
+class HotelOutputResult:
 
     def __init__(self):
         ts = time.time()
